@@ -20,7 +20,7 @@ contract Implementation{
 
     }
 
-    function getResults() public view returns(uint256){
+    function getResults() public returns(uint256){
         return results;
     }
 }
