@@ -2,16 +2,17 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/contracts/calculator.sol": {
-      "lastModificationDate": 1773341659697,
-      "contentHash": "2232d1c633a34a672efde34433ee8f31",
+      "lastModificationDate": 1773350905520,
+      "contentHash": "d9a954e30184c2e4c73c02778e537ebc",
       "sourceName": "contracts/calculator.sol",
       "solcConfig": {
-        "version": "0.8.19",
+        "version": "0.8.22",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 1000
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -19,7 +20,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -30,7 +32,7 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.19"
+        "^0.8.22"
       ],
       "artifacts": [
         "Implementation",
@@ -38,16 +40,17 @@
       ]
     },
     "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/contracts/storage_collision.sol": {
-      "lastModificationDate": 1773341992555,
-      "contentHash": "a896450f858d352fca127203ac2ae8ae",
+      "lastModificationDate": 1773350910868,
+      "contentHash": "804694db1d889c5f311625c95e744c2c",
       "sourceName": "contracts/storage_collision.sol",
       "solcConfig": {
-        "version": "0.8.19",
+        "version": "0.8.22",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 1000
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -55,7 +58,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -66,7 +70,7 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.19"
+        "^0.8.22"
       ],
       "artifacts": [
         "Proxy",
@@ -75,16 +79,17 @@
       ]
     },
     "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/contracts/transparent_proxy.sol": {
-      "lastModificationDate": 1773349793408,
-      "contentHash": "c015d684ec9f6b7b978db11ba980b13f",
+      "lastModificationDate": 1773350916765,
+      "contentHash": "924cbb87ce2dd680874f13a25fdcab3d",
       "sourceName": "contracts/transparent_proxy.sol",
       "solcConfig": {
-        "version": "0.8.19",
+        "version": "0.8.22",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 1000
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -92,7 +97,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -105,7 +111,7 @@
         "@openzeppelin/contracts/utils/StorageSlot.sol"
       ],
       "versionPragmas": [
-        "^0.8.19"
+        "^0.8.22"
       ],
       "artifacts": [
         "CounterV1",
@@ -114,16 +120,17 @@
       ]
     },
     "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol": {
-      "lastModificationDate": 1773334607965,
-      "contentHash": "682f7dd1f2e1147c8390e7575deceb2d",
+      "lastModificationDate": 1773350822651,
+      "contentHash": "e656d64c4ce918f3d13030b91c935134",
       "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
       "solcConfig": {
-        "version": "0.8.19",
+        "version": "0.8.22",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 1000
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -131,7 +138,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -142,10 +150,393 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.0"
+        "^0.8.20"
       ],
       "artifacts": [
         "StorageSlot"
+      ]
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils.sol": {
+      "lastModificationDate": 1773350816639,
+      "contentHash": "45c0af7785dd530ca1243ebd7a6fb4c1",
+      "sourceName": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../beacon/IBeacon.sol",
+        "../../interfaces/IERC1967.sol",
+        "../../utils/Address.sol",
+        "../../utils/StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.21"
+      ],
+      "artifacts": [
+        "ERC1967Utils"
+      ]
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts/interfaces/IERC1967.sol": {
+      "lastModificationDate": 1773350819228,
+      "contentHash": "3c9577899f440b0c66e880c96e9250bb",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC1967.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.11"
+      ],
+      "artifacts": [
+        "IERC1967"
+      ]
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts/proxy/beacon/IBeacon.sol": {
+      "lastModificationDate": 1773350819221,
+      "contentHash": "ee2e46607ed2be58bd554306d068acba",
+      "sourceName": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.16"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1773350815728,
+      "contentHash": "44f61b7a5cd41aa205efaebb4686f797",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Errors.sol",
+        "./LowLevelCall.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts/utils/Errors.sol": {
+      "lastModificationDate": 1773350816798,
+      "contentHash": "6b5eac2b85500c3012977849cfd633d8",
+      "sourceName": "@openzeppelin/contracts/utils/Errors.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Errors"
+      ]
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts/utils/LowLevelCall.sol": {
+      "lastModificationDate": 1773350820344,
+      "contentHash": "0474caccabcd255a35c82fe878701271",
+      "sourceName": "@openzeppelin/contracts/utils/LowLevelCall.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "LowLevelCall"
+      ]
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol": {
+      "lastModificationDate": 1773350822677,
+      "contentHash": "59a325652a58784f0c3050d8b71f8595",
+      "sourceName": "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/draft-IERC1822.sol",
+        "../ERC1967/ERC1967Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.22"
+      ],
+      "artifacts": [
+        "UUPSUpgradeable"
+      ]
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts/interfaces/draft-IERC1822.sol": {
+      "lastModificationDate": 1773350816189,
+      "contentHash": "9b2cafd2153b51bcfd7f4cb4cfc975aa",
+      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.16"
+      ],
+      "artifacts": [
+        "IERC1822Proxiable"
+      ]
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol": {
+      "lastModificationDate": 1773350820275,
+      "contentHash": "12eb449e159b95e2812b0f17c758ebb2",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.22"
+      ],
+      "artifacts": []
+    },
+    "/home/wtc/Documents/Projects/Upgradeable_Contracts_Basics/contracts/uups.sol": {
+      "lastModificationDate": 1773420891466,
+      "contentHash": "d3ace329f3528a39fad79ac031a53f29",
+      "sourceName": "contracts/uups.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.22"
+      ],
+      "artifacts": [
+        "TokenV1"
       ]
     }
   }
